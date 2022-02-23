@@ -11,19 +11,25 @@ public class CharacterScript : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public bool isDialog;
+
     #endregion
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        DialogOn();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Jump();
+        if (isDialog == false)
+        {
+            Move();
+            Jump();
+        }
     }
 
     public void Move()
@@ -39,5 +45,15 @@ public class CharacterScript : MonoBehaviour
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
+    }
+
+    public void DialogOn()
+    {
+        isDialog = true;
+    }
+
+    public void DialogOff()
+    {
+        isDialog = false;
     }
 }
