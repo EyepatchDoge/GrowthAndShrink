@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Kasper/Scenes/Kasper_Test_Scene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
