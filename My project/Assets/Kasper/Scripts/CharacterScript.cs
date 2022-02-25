@@ -50,6 +50,7 @@ public class CharacterScript : MonoBehaviour
     public void DialogOn()
     {
         isDialog = true;
+        rb.velocity = new Vector2(0,0);
     }
 
     public void DialogOff()
