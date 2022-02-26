@@ -1872,6 +1872,7 @@ GameObject:
   - component: {fileID: 1724828751}
   - component: {fileID: 1724828750}
   - component: {fileID: 1724828749}
+  - component: {fileID: 1724828752}
   - component: {fileID: 1724828748}
   m_Layer: 0
   m_Name: Test Mushroom
@@ -1893,7 +1894,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023625374, y: -2.0090535}
+  m_Offset: {x: 0.06472206, y: -0.81724}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1904,7 +1905,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.098135, y: 0.9608922}
+  m_Size: {x: 3.851635, y: 3.3445191}
   m_EdgeRadius: 0
 --- !u!95 &1724828749
 Animator:
@@ -1990,6 +1991,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724828752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724828747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 645ff22f42208e74bad8562b98c9a04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectState: 0
+  smallBoxColliderSize: {x: 1.098135, y: 0.9608922}
+  smallBoxColliderOffset: {x: 0.02362537, y: -2.009053}
+  bigBoxColliderSize: {x: 3.851635, y: 3.344519}
+  bigBoxColliderOffset: {x: 0.06472206, y: -0.81724}
+  isAnimating: 0
 --- !u!1 &1891863857
 GameObject:
   m_ObjectHideFlags: 0
