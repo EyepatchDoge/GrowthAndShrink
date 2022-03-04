@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Kasper/Scenes/MainMenu.unity
+    guid: 60d740bb1008d864a9a3205e61c48a9f
+  - enabled: 1
+    path: Assets/Kasper/Scenes/Kasper_Level_01.unity
+    guid: 64ee40c5ee87d4740b3eee9036ed1dce
+  - enabled: 1
+    path: Assets/Kasper/Scenes/Kasper_Level_02.unity
+    guid: d7d88fec97568c34695e3bd374e23c44
   m_configObjects: {}
