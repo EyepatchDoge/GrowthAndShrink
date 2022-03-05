@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 114353954}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,6 +409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -479,6 +483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -548,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushrooms_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
@@ -811,7 +823,7 @@ GameObject:
   - component: {fileID: 696092507}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +969,7 @@ GameObject:
   - component: {fileID: 719906927}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1064,6 +1076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1138,6 +1154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1210,7 +1230,7 @@ GameObject:
   - component: {fileID: 1362788953}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1546,6 +1566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushrooms_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1617,7 +1641,7 @@ GameObject:
   - component: {fileID: 1837735608}
   m_Layer: 0
   m_Name: boundary (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,7 +1699,7 @@ GameObject:
   - component: {fileID: 1913744033}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1802,7 +1826,7 @@ Transform:
   - {fileID: 2018380316}
   - {fileID: 2034993834}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1983617894
 PrefabInstance:
@@ -1826,6 +1850,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushrooms_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
@@ -1900,6 +1928,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushrooms_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
@@ -1982,6 +2014,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushrooms_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder

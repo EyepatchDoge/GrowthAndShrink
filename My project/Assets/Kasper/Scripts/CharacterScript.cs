@@ -13,6 +13,8 @@ public class CharacterScript : MonoBehaviour
 
     public bool isDialog;
 
+    public bool isGrounded;
+
     #endregion
     
     // Start is called before the first frame update
@@ -41,7 +43,7 @@ public class CharacterScript : MonoBehaviour
 
     public void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
@@ -56,5 +58,21 @@ public class CharacterScript : MonoBehaviour
     public void DialogOff()
     {
         isDialog = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Ground") && isGrounded == false)
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Ground") && isGrounded == true)
+        {
+            isGrounded = false;
+        }
     }
 }

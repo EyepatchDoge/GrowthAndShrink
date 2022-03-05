@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 209411795}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ Transform:
   m_LocalScale: {x: 49.864204, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1355596801}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &209411794
 SpriteRenderer:
@@ -439,6 +439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -511,7 +515,7 @@ GameObject:
   - component: {fileID: 487746989}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -692,6 +696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -764,7 +772,7 @@ GameObject:
   - component: {fileID: 943622674}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -873,7 +881,7 @@ GameObject:
   - component: {fileID: 988276563}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -982,7 +990,7 @@ GameObject:
   - component: {fileID: 1002375064}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -999,7 +1007,7 @@ Transform:
   m_LocalScale: {x: 1.7751508, y: 6.280626, z: 1}
   m_Children: []
   m_Father: {fileID: 1355596801}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1002375064
 BoxCollider2D:
@@ -1101,6 +1109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1189,7 +1201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1355596801}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1187890730
 BoxCollider2D:
@@ -1347,9 +1359,9 @@ Transform:
   m_LocalPosition: {x: -0.97735476, y: -0.889086, z: -23.094164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1187890729}
   - {fileID: 209411793}
   - {fileID: 1002375063}
-  - {fileID: 1187890729}
   - {fileID: 2011849084}
   - {fileID: 1876242569}
   - {fileID: 487746988}
@@ -1381,6 +1393,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushroom_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
@@ -1630,7 +1646,7 @@ GameObject:
   - component: {fileID: 1876242570}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1739,7 +1755,7 @@ GameObject:
   - component: {fileID: 2009220280}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1848,7 +1864,7 @@ GameObject:
   - component: {fileID: 2011849085}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2038,6 +2054,10 @@ PrefabInstance:
     - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_Name
       value: Mushroom_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555493239274355399, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1555493239274355402, guid: 5f52af78f36414e40ac504d18833ee18, type: 3}
       propertyPath: m_RootOrder
