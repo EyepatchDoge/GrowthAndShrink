@@ -9,7 +9,7 @@ public class CharacterScript : MonoBehaviour
   
     public float jumpHeight = 1.0f;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public bool isDialog;
 
@@ -64,7 +64,7 @@ public class CharacterScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Ground") && isGrounded == false)
         {
-            isGrounded = true;
+            IsGrounded();
         }
     }
 
@@ -72,7 +72,18 @@ public class CharacterScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Ground") && isGrounded == true)
         {
-            isGrounded = false;
+            IsNotGrounded();
         }
     }
+
+    public void IsGrounded()
+    {
+        isGrounded = true;
+    }
+
+    public void IsNotGrounded()
+    {
+        isGrounded = false;
+    }
+
 }
