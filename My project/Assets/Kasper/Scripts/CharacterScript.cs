@@ -13,9 +13,28 @@ public class CharacterScript : MonoBehaviour
 
     public bool isDialog;
 
-    public bool isGrounded;
+    //public bool isGrounded;
+
+    public LayerMask groundLayer;
 
     #endregion
+
+    public bool IsGrounded()
+    {
+
+        Vector2 position = transform.position;
+        Vector2 direction = Vector2.down;
+        float distance = 1.2f;
+
+        RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
+        Debug.DrawRay(position, direction, Color.green);
+       
+        if (hit.collider != null)
+        {
+            return true;
+        }
+        return false;
+    }
     
     // Start is called before the first frame update
     void Start()
@@ -43,7 +62,11 @@ public class CharacterScript : MonoBehaviour
 
     public void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && !IsGrounded())
+        {
+            return;
+        }
+        else if(Input.GetButton("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
@@ -60,6 +83,7 @@ public class CharacterScript : MonoBehaviour
         isDialog = false;
     }
 
+    /*
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Ground") && isGrounded == false)
@@ -85,5 +109,5 @@ public class CharacterScript : MonoBehaviour
     {
         isGrounded = false;
     }
-
+    */
 }

@@ -11,17 +11,13 @@ public class MushroomJumpPad : MonoBehaviour
 
     #endregion
 
-    private void Start()
-    {
-        cc = GetComponent<CharacterScript>();
-    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             rb.velocity = new Vector2(0, bounceHeight);
-            cc.IsNotGrounded();
+            //cc.IsNotGrounded();
         }
     }
 

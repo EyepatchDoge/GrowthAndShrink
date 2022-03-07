@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 617525783}
   - component: {fileID: 617525782}
   - component: {fileID: 617525781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mushroom_2 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &656117498
 RectTransform:
   m_ObjectHideFlags: 0
@@ -737,8 +737,8 @@ PrefabInstance:
       value: Character_Obj
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524819, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
-      propertyPath: jumpHeight
-      value: 12
+      propertyPath: groundLayer.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_RootOrder
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 1463155783}
   - component: {fileID: 1463155782}
   - component: {fileID: 1463155781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mushroom_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 1637777786}
   - component: {fileID: 1637777788}
   - component: {fileID: 1637777787}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 1690667405}
   - component: {fileID: 1690667407}
   - component: {fileID: 1690667406}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1746,7 +1746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1896093991
 RectTransform:
   m_ObjectHideFlags: 0
