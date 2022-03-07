@@ -9,9 +9,11 @@ public class CharacterScript : MonoBehaviour
   
     public float jumpHeight = 1.0f;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public bool isDialog;
+
+    public bool isGrounded;
 
     #endregion
     
@@ -41,7 +43,7 @@ public class CharacterScript : MonoBehaviour
 
     public void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(0, jumpHeight);
         }
@@ -57,4 +59,31 @@ public class CharacterScript : MonoBehaviour
     {
         isDialog = false;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Ground") && isGrounded == false)
+        {
+            IsGrounded();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Ground") && isGrounded == true)
+        {
+            IsNotGrounded();
+        }
+    }
+
+    public void IsGrounded()
+    {
+        isGrounded = true;
+    }
+
+    public void IsNotGrounded()
+    {
+        isGrounded = false;
+    }
+
 }
