@@ -1,0 +1,35 @@
+LOCATION: Brooke > _Scripts > GrowShrinkObject_Box
+
+COMPONENTS:
+- GameObject
+- SpriteRenderer
+- Collider2D (shape dependent on object)
+- Animator
+	- sizeState boolean
+	- Animations
+- GrowShrinkObject_Box (Script)
+	- Object State
+	- Small Box Collider Size
+	- Small Box Collider Offset
+	- Big Box Collider Size
+	- Big Box Collider Offset
+	
+Script Explanation:
+	- Object has a public ENUM for two possible states: SMALL and Big
+	- Script holds Vector2 data for boxCollider data for both states, can be modified in editor
+	- OnMouseDown(): 
+		- Calls SwapState()
+	- SwapState():
+		- If the object is not currently animating (tracked by boolean),
+			- If object is SMALL, set state to BIG, set the animator 'sizeState' to true, and edit the boxCollider size to be the BIG one
+			- If object is BIG, vice versa
+	- DoneAnimating():
+		- Used by the animator at the end of the growing/shrinking animations via an animation event to toggle isAnimating to false.
+		
+Animator:
+	- Four animations attached, Small State, Small to Big, Big State, and Big to Small
+	- Animator and Animation Files should be created for each object, stored in a subfolder under wherever you keep your sprites for these objects
+	- Has a boolean sizeState, set FALSE if starting SMALL, TRUE if starting BIG
+	- Entry animation should link to the object's starting state
+	- Transitions from Small State -> Small to Big and Big State -> Big to Small should have an appropriate Condition check on the boolean, no Exit Time, no Fixed Duration, and 0 Transition Duration/Offset
+	- Transitions from Small to Big -> Big State and Big to Small -> Small State should have no condition checks, an Exit time of 1, and 0 Transition Duration/Offset
