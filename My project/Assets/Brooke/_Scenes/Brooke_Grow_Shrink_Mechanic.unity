@@ -1445,7 +1445,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   jumpHeight: 10
+  rb: {fileID: 1192139073}
   isDialog: 0
+  isGrounded: 0
 --- !u!70 &1192139070
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1871,9 +1873,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1724828751}
   - component: {fileID: 1724828750}
+  - component: {fileID: 1724828748}
   - component: {fileID: 1724828749}
   - component: {fileID: 1724828752}
-  - component: {fileID: 1724828748}
   m_Layer: 0
   m_Name: Test Mushroom
   m_TagString: Untagged
@@ -2008,7 +2010,6 @@ MonoBehaviour:
   smallBoxColliderOffset: {x: 0.02362537, y: -2.009053}
   bigBoxColliderSize: {x: 3.851635, y: 3.344519}
   bigBoxColliderOffset: {x: 0.06472206, y: -0.81724}
-  isAnimating: 0
 --- !u!1 &1891863857
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableObject : MonoBehaviour
+public class GrowShrinkObject_Box : MonoBehaviour
 {
     //Constants
     public enum ObjectState {SMALL, BIG}
@@ -19,7 +19,7 @@ public class InteractableObject : MonoBehaviour
     [SerializeField]
     private Vector2 bigBoxColliderOffset;
 
-    public bool isAnimating;
+    private bool isAnimating;
 
     //Object Components
     private BoxCollider2D boxCollider;
