@@ -138,4 +138,6 @@ MonoBehaviour:
   jumpHeight: 12
   rb: {fileID: 0}
   isDialog: 0
-  isGrounded: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
