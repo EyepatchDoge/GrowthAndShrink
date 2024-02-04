@@ -43,11 +43,13 @@ public class GrowShrinkObject_Box : MonoBehaviour
                 animator.SetBool("sizeState", true);
                 boxCollider.size = bigBoxColliderSize;
                 boxCollider.offset = bigBoxColliderOffset;
+                Debug.Log("Object grew");
             } else {
                 objectState = ObjectState.SMALL;
                 animator.SetBool("sizeState", false);
                 boxCollider.size = smallBoxColliderSize;
                 boxCollider.offset = smallBoxColliderOffset;
+                Debug.Log("Object Shrunk");
             }
         }
     }
