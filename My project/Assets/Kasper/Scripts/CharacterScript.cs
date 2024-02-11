@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CharacterScript : MonoBehaviour
 {
-    #region references
     public int movementSpeed;
   
     public float jumpHeight = 1.0f;
@@ -12,25 +11,25 @@ public class CharacterScript : MonoBehaviour
     public Rigidbody2D rb;
 
     public bool isDialog;
+    public float distance = 1.2f;
 
     //public bool isGrounded;
 
     public LayerMask groundLayer;
-
-    #endregion
+    public Animator animator;
 
     public bool IsGrounded()
     {
-
         Vector2 position = transform.position;
         Vector2 direction = Vector2.down;
-        float distance = 1.2f;
+        
 
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
         Debug.DrawRay(position, direction, Color.green);
        
         if (hit.collider != null)
         {
+            Debug.Log("grounded");
             return true;
         }
         return false;
@@ -48,29 +47,46 @@ public class CharacterScript : MonoBehaviour
     {
         if (isDialog == false)
         {
+            AnimMove();
             Move();
             Jump();
+
         }
+        
     }
+
 
     public void Move()
     {
         float hort = Input.GetAxis("Horizontal");
-
         rb.velocity = new Vector2(hort * movementSpeed, rb.velocity.y);
+        
     }
+
+    public void AnimMove(){
+        if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D))
+        {
+            animator.SetBool("run", true);
+        }
+
+        else if(Input.GetKeyUp(KeyCode.A)||Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("run", false);
+        }
+    }
+ 
 
     public void Jump()
     {
-        if (Input.GetButtonDown("Jump") && !IsGrounded())
-        {
-            return;
-        }
-        else if(Input.GetButton("Jump") && IsGrounded())
+        
+        if(Input.GetButton("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(0, jumpHeight);
+            animator.SetTrigger("jumping");
+
         }
     }
+
 
     public void DialogOn()
     {
@@ -82,32 +98,5 @@ public class CharacterScript : MonoBehaviour
     {
         isDialog = false;
     }
-
-    /*
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Ground") && isGrounded == false)
-        {
-            IsGrounded();
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Ground") && isGrounded == true)
-        {
-            IsNotGrounded();
-        }
-    }
-
-    public void IsGrounded()
-    {
-        isGrounded = true;
-    }
-
-    public void IsNotGrounded()
-    {
-        isGrounded = false;
-    }
-    */
+    
 }
