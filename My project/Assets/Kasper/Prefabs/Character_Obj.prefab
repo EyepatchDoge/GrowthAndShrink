@@ -166,6 +166,7 @@ MonoBehaviour:
   jumpHeight: 12
   rb: {fileID: 8270729749584524911}
   isDialog: 0
+  distance: 1.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
