@@ -80,11 +80,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.2
+      value: -31.78785
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.92
+      value: -2.1369834
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -118,6 +118,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8270729749584524911, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: aaf69667ff998f145883e5099b7da82b, type: 2}
     - target: {fileID: 8270729749584524911, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_GravityScale
       value: 3
@@ -169,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15452f101990b614aa26241313d31b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 700
+  m_JumpForce: 800
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -291,7 +295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 8040358297098133149}
   animator: {fileID: 97949538798228446}
-  runSpeed: 40
+  runSpeed: 50
+  isDialog: 0
+  rb: {fileID: 0}
 --- !u!4 &9123593553054929493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
