@@ -29,32 +29,81 @@ public class GrowShrinkObject_Box : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        SetupDefaultState();
     }
 
-    void OnMouseDown() {
+    void OnMouseDown() 
+    {
         SwapState();
     }
 
-    void SwapState(){
-        if (!isAnimating){
+    private void SetupDefaultState()
+    {
+        if (!isAnimating)
+        {
             isAnimating = true;
-            if (objectState == ObjectState.SMALL){
-                objectState = ObjectState.BIG;
-                animator.SetBool("sizeState", true);
-                boxCollider.size = bigBoxColliderSize;
-                boxCollider.offset = bigBoxColliderOffset;
-                Debug.Log("Object grew");
-            } else {
-                objectState = ObjectState.SMALL;
-                animator.SetBool("sizeState", false);
-                boxCollider.size = smallBoxColliderSize;
-                boxCollider.offset = smallBoxColliderOffset;
-                Debug.Log("Object Shrunk");
+            if (objectState == ObjectState.SMALL)
+            {
+                ShrikObject();
+            }
+            else 
+            {
+                GrowObject();
             }
         }
     }
 
-    void DoneAnimating(){
+    void SwapState()
+    {
+        if (!isAnimating)
+        {
+            isAnimating = true;
+            if (objectState == ObjectState.SMALL)
+            {
+                GrowObject();
+            } 
+            else 
+            {
+                ShrikObject();
+            }
+        }
+    }
+
+    public void GrowObject()
+    {
+        ChangeObjectSize(true, ObjectState.BIG);
+    }
+
+    public void ShrikObject()
+    {
+        ChangeObjectSize(false, ObjectState.SMALL);
+    }
+
+    public void ChangeObjectSize(bool setSize, ObjectState newState)
+    {
+         objectState = newState;
+         animator.SetBool("sizeState", setSize);
+         UpdateColliders();
+    }
+
+    public void UpdateColliders()
+    {
+        if(objectState == ObjectState.BIG)
+        {
+            boxCollider.size = bigBoxColliderSize;
+            boxCollider.offset = bigBoxColliderOffset;
+        }
+        else
+        {
+            boxCollider.size = smallBoxColliderSize;
+            boxCollider.offset = smallBoxColliderOffset;
+        }
+    }
+
+    void DoneAnimating()
+    {
         isAnimating = false;
     }
+
+   
 }

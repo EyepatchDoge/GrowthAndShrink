@@ -80,11 +80,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.78785
+      value: -21.2
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1369834
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 8270729749584524910, guid: cde2b24c9edcb8e4ba3499534b5caac9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -280,7 +280,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.7700002, y: -2.9880214}
   serializedVersion: 2
-  m_Radius: 1.5980169
+  m_Radius: 1.48
 --- !u!114 &1120592551072538219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 8040358297098133149}
   animator: {fileID: 97949538798228446}
-  runSpeed: 50
+  runSpeed: 100
   isDialog: 0
   rb: {fileID: 0}
 --- !u!4 &9123593553054929493 stripped

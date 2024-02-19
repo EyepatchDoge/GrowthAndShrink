@@ -2869,25 +2869,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2095150828191360418, guid: 542786a83f71f2e468df63f480405920, type: 3}
-      propertyPath: objectState
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2095150828191360428, guid: 542786a83f71f2e468df63f480405920, type: 3}
       propertyPath: m_Name
-      value: 'Mushroom_2 '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095150828191360429, guid: 542786a83f71f2e468df63f480405920, type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095150828191360429, guid: 542786a83f71f2e468df63f480405920, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095150828191360429, guid: 542786a83f71f2e468df63f480405920, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.42
+      value: PlatformShroom
       objectReference: {fileID: 0}
     - target: {fileID: 2095150828191360431, guid: 542786a83f71f2e468df63f480405920, type: 3}
       propertyPath: m_LocalPosition.x

@@ -7,7 +7,9 @@ public class MushroomJumpPad : MonoBehaviour
     #region variables
     public Rigidbody2D rb;
     public float bounceHeight;
-    public CharacterScript cc;
+    public Animator anim;
+    
+    public Animator characterAnim;
 
     #endregion
 
@@ -16,8 +18,10 @@ public class MushroomJumpPad : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            characterAnim.SetBool("isJumping", true);
+            anim.SetTrigger("Bounce");
             rb.velocity = new Vector2(0, bounceHeight);
-            //cc.IsNotGrounded();
+           
         }
     }
 
